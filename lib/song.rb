@@ -8,7 +8,7 @@
       end
     end
     genre_count
-  end
+  
   
   @@artists = []
   
