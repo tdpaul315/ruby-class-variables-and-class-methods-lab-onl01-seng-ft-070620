@@ -1,3 +1,20 @@
+  (1..5).each_with_object(2) { |value, memo| memo *= value} return memo
+
+
+class Song 
+  @@count = 0
+  
+  def self.count 
+    @@count
+  end 
+  
+  @@genres = []
+  
+  
+  def self.genres
+    @@genres.uniq
+  end
+  
   def self.genre_count
     genre_count = {}
     @@genres.each do |genre|
@@ -8,7 +25,7 @@
       end
     end
     genre_count
-  
+  end
   
   @@artists = []
   
@@ -36,6 +53,7 @@ tomorow = Song.new("Tomorow", "John Smith", "classic")
 a_yearz = Song.new("A Yearz", "Adam Johns", "oldtime")
 a_rabess = Song.new("Arabess", "Habibi Watan", "Rai")
 cus_umak = Song.new("Cus Ummach", "Haifa Wehbe", "Rai")
+
 
 Song.genre_count
 
